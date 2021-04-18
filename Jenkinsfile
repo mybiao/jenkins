@@ -5,12 +5,12 @@ pipeline{
 
     stages{
         stage("build"){
-            step{
+            steps{
                 sh 'go build .'
             }
         }
         stage('run'){
-            step{
+            steps{
                 sh 'go run .'
             }
         }
