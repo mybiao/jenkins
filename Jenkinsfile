@@ -1,6 +1,6 @@
 pipeline{
     agent{
-        docker {image 'go:1.15.7'}
+        docker {image 'go:1.16'}
     }
 
     stages{
