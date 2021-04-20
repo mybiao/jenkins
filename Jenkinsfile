@@ -6,12 +6,13 @@ pipeline{
     stages{
         stage("build"){
             steps{
-                sh 'go build .'
+                sh 'go build -o demo'
             }
         }
         stage('run'){
             steps{
-                sh 'go run .'
+                sh './demo'
+                sh 'echo "end"'
             }
         }
     }
