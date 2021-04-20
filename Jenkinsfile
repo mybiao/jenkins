@@ -10,6 +10,7 @@ pipeline{
             }
         }
         stage('run'){
+            agent any
             steps{
                 sh './demo'
                 sh 'echo "end"'
